@@ -2,63 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Senuwa's Story World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senuwa's Stories</title>
   <style>
-     header {
-  background-image: url('pexels-harrison-candlin-1279336-2441454.jpg'); /* Change to your image path */
-  background-size: cover;             /* Make sure the image covers the whole area */
-  background-position: center;        /* Center the image */
-  background-repeat: no-repeat;       /* Prevent image from repeating */
-  width: 100%;                       /* Full width */
-  height: 320px;                     /* Height of the header */
-  border-radius: 0 0 30px 30px;      /* Rounded corners at the bottom */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-    body {
+    /* Reset and base */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #ffecd2, #fcb69f);
       color: #333;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-    a.button {
-  display: inline-block;
-  padding: 14px 28px;
-  margin: 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  background: linear-gradient(135deg, #ff6a88, #ff99ac);
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0 8px 20px rgba(255, 105, 135, 0.4);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  length:100px;
     }
 
-a.button:hover {
-  background: linear-gradient(135deg, #ff99ac, #ff6a88);
-  box-shadow: 0 12px 25px rgba(255, 105, 135, 0.5);
-  transform: translateY(-3px);
-}
+    /* Header image */
+    header {
+      background-image: url('https://github.com/senuwaSS/senuwaSS.github.io/blob/main/pexels-harrison-candlin-1279336-2441454.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+      height: 320px;
+      width: 100%;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header h1 {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 16px 32px;
+      border-radius: 20px;
+      font-size: 2.2rem;
+      color: #444;
+      backdrop-filter: blur(5px);
+    }
+
+    /* Page content */
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #ff6b81;
+    }
+
+    .container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Lovely button */
+    .lovely-button {
+      display: inline-block;
+      padding: 12px 30px;
+      margin-top: 30px;
+      background: #ff6b81;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .lovely-button:hover {
+      background: #ff4757;
+    }
   </style>
-  <img class="header" src="pexels-harrison-candlin-1279336-2441454.jpg" alt="Header Image">
 </head>
 <body>
-  <h1>Welcome to Senu's Story World 💕</h1>
-  <p>This is a place full of love, memories, and soft emotions written by Me 🥺✨</p>
-  <a href="sanu.html" class="button">Read About Sanu 🐪❤️</a>
+
+  <header>
+    <h1>Welcome to My Lovely World</h1>
+  </header>
+
+  <div class="container">
+    <h2>The Rainy Days at Methu's House</h2>
+    <p>
+      A week filled with laughter, songs, and soft rain tapping on the roof. 
+      The attic became our secret world, where memories were made under flickering lights and warm blankets.
+    </p>
+
+    <a class="lovely-button">Read the Story</a>
   </div>
-</div>
+
 </body>
 </html>
