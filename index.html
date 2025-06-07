@@ -37,11 +37,13 @@
       margin: 5px;
       display: inline-block;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 12px rgba(193, 93, 164, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     nav a:hover {
-      background-color: #a33c84;
-      box-shadow: 0 8px 24px rgba(197, 110, 110, 0.4);
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 12px 24px rgba(193, 93, 164, 0.5);
+      letter-spacing: 0.3px;
     }
     section {
       max-width: 800px;
